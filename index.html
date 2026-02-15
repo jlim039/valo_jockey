@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valo | You Drink, We Drive</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --valo-purple:#8E5BBF;
+  --valo-black:#0B0B0B;
+  --muted:#BDBDBD;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--valo-black);
+  color:#fff;
+  text-align:center;
+}
+
+.hero{padding:60px 20px 30px;}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:var(--valo-purple);
+  margin-bottom:26px;
+}
+
+h1{
+  font-size:34px;
+  font-weight:800;
+  line-height:1.15;
+  margin-bottom:16px;
+}
+
+.subtext{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.35;
+  margin-bottom:18px;
+}
+
+/* 15-second reassurance */
+.microcopy{
+  color:#D6D6D6;
+  font-size:14px;
+  margin-bottom:28px;
+}
+
+.qr-container{
+  background:#fff;
+  padding:20px;
+  display:inline-block;
+  border-radius:16px;
+  margin-bottom:22px;
+  box-shadow:0 12px 28px rgba(0,0,0,.35);
+}
+
+.qr-container img{width:200px;height:200px;}
+
+.cta-button{
+  display:inline-block;
+  background:var(--valo-purple);
+  color:#fff;
+  padding:18px 34px;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.25s ease;
+}
+
+.cta-button:hover{background:#A46DD6;}
+
+.alt-link{
+  display:block;
+  margin-top:12px;
+  font-size:13px;
+  color:#AFAFAF;
+  text-decoration:none;
+}
+
+.alt-link:hover{color:#fff;}
+
+.trust{
+  margin-top:40px;
+  padding:26px 18px;
+  background:#111;
+  font-size:14px;
+  color:#CFCFCF;
+}
+
+.trust .badges{margin-top:8px;}
+
+.footer{
+  padding:18px 16px 26px;
+  font-size:12px;
+  color:#777;
+}
+
+.footer a{
+  color:#9A9A9A;
+  text-decoration:none;
+}
+
+.footer a:hover{color:#fff;}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.dot{opacity:.6;}
+
+@media (min-width:768px){
+  h1{font-size:46px;}
+  .qr-container img{width:240px;height:240px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div class="logo">VALO</div>
+
+  <h1>YOU DRINK,<br>WE DRIVE.</h1>
+
+  <div class="subtext">
+    Book a professional car jockey in seconds.<br>
+    Get home safely. With your car.
+  </div>
+
+
+  <div class="qr-container">
+    <img
+      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://t.me/YOUR_TELEGRAM_BOT_USERNAME?start=book"
+      alt="Scan to Book">
+  </div>
+
+  <br>
+
+  <a
+    href="https://t.me/YOUR_TELEGRAM_BOT_USERNAME?start=book"
+    class="cta-button"
+    aria-label="Book via Telegram">
+    BOOK VIA TELEGRAM
+  </a>
+
+  <a class="alt-link" href="https://telegram.org/">Don’t have Telegram? Get it here.</a>
+</div>
+
+<div class="trust">
+  Singpass verified • Certificate of Merit (COM) certified drivers
+  <div class="badges">Safe • Insured • Reliable</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="/terms.html">Terms</a><span class="dot">•</span>
+    <a href="/privacy.html">Privacy</a><span class="dot">•</span>
+    <a href="/contact.html">Contact</a><span class="dot">•</span>
+    <a href="/careers.html">Careers</a>
+  </div>
+  © 2025 Valo. Enjoy your night responsibly.
+</footer>
+
+</body>
+</html>
