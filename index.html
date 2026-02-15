@@ -125,13 +125,35 @@ h1{
   h1{font-size:46px;}
   .qr-container img{width:240px;height:240px;}
 }
+
+
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+
+  font-size:28px;
+  font-weight:800;
+  color:var(--valo-purple);
+  margin-bottom:26px;
+}
+
+.valo-mark{
+  height:40px;
+  width:auto;
+  display:block;
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="hero">
-  <div class="logo">VALO</div>
+  <div class="logo">
+  <img src="logos/Valo_logo.svg" alt="Valo Logo" class="valo-mark">
+  <span>VALO</span>
+</div>
 
   <h1>YOU DRINK,<br>WE DRIVE.</h1>
 
@@ -143,14 +165,14 @@ h1{
 
   <div class="qr-container">
     <img
-      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://t.me/YOUR_TELEGRAM_BOT_USERNAME?start=book"
+      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://t.me/valoservice_bot?start=book"
       alt="Scan to Book">
   </div>
 
   <br>
 
   <a
-    href="https://t.me/YOUR_TELEGRAM_BOT_USERNAME?start=book"
+    href="https://t.me/valoservice_bot?start=book"
     class="cta-button"
     aria-label="Book via Telegram">
     BOOK VIA TELEGRAM
